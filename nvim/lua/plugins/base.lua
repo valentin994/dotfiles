@@ -7,13 +7,16 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.hlsearch = false 
 vim.opt.incsearch = true
+vim.opt.autoread = true
 
 vim.opt.smartindent = true
 
 vim.opt.wrap = false
 
 vim.g.mapleader = " "
+vim.opt.updatetime = 50
 
+vim.cmd[[set termguicolors]]
 vim.cmd[[colorscheme nord]]
 
 local builtin = require('telescope.builtin')
@@ -30,6 +33,10 @@ vim.opt.writebackup = false
 -- Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 -- delays and poor user experience.
 vim.opt.updatetime = 300
+
+-- Netrw settings
+vim.g.netrw_banner = 0
+vim.g.netrw_liststyle = 3
 
 -- Always show the signcolumn, otherwise it would shift the text each time
 -- diagnostics appear/become resolved.

@@ -1,4 +1,0 @@
-# Dotfiles
-
-## Nvim - neovim configuration
-

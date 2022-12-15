@@ -27,8 +27,9 @@ return require('packer').startup(function(use)
   requires = { {'nvim-lua/plenary.nvim'} }
   } 
 
-  use 'jiangmiao/auto-pairs'
   -- Theme
   -- If you are using Packer
-  use 'shaunsingh/nord.nvim'
+  use 'arcticicestudio/nord-vim'
+  use 'hashivim/vim-terraform'
+  use 'f-person/git-blame.nvim'
 end)

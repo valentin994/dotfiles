@@ -3,4 +3,4 @@ require("plugins.lualine")
 require("plugins.indent_blankline")
 require("plugins.telescope")
 require("plugins.terminal")
-
+require("plugins.remap")
